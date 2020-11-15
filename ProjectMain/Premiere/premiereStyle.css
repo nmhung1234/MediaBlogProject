@@ -1,0 +1,138 @@
+/* -----------reset css-------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+/* ------ container, re-used-------- */
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+}
+a{
+    text-decoration: none;
+    color:  black;
+}
+/* ------------------------- */
+
+/* --------- lefft side -------- */
+.container .left-side{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://uppercasetheme.com/kendrick-bronson/wp-content/uploads/sites/29/demo-image-00012-960x960.jpg');
+    background-size: cover;
+}
+
+.container .left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .left-side .nav{
+    height: 50px;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 40px 0;
+}
+.container .left-side .nav .author{
+    line-height: 50px;
+    padding:  0 30px;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.container .left-side .nav .right-nav{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 13px;
+    transition: all 0.8s;
+}
+.container .left-side .nav .right-nav:hover{
+    cursor: pointer;
+}
+.container .left-side .nav .right-nav .menu{
+    display: block;
+    border: 1.5px solid rgba(255, 255, 255, 0.521);
+    padding: 10px 25px;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
+.container .left-side .nav .right-nav .menu:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+}
+.container .left-side .nav .right-nav .search{
+    display: flex;
+    transition: all 0.5s;
+}
+.container .left-side .nav .right-nav .search:hover{
+    color: rgb(179, 179, 179);
+    transition: all 0.5s;
+}
+.container .left-side .nav .right-nav .search i{
+    padding: 4px 10px 0 0 ;
+    font-size: 13px;
+}
+.container .left-side .title-of-content{
+    padding: 50px;
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+}
+
+/* ------ right side -------- */
+.container .right-side{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 40px;
+    font-size: 22px;
+}
+/* --------------- */
+.information {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    font-size: 14px;
+    
+}
+.information p{
+    padding-left: 150px;
+}
+.right-side .contribute-content{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid black; */
+    padding: 30px 0;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.right-side .contribute-content input{
+   padding: 10px;
+   margin: 20px 0;
+}
+.right-side .contribute-content input[type=email]{
+    width: 250px;
+ }
+.right-side .contribute-content .fa-paper-plane{
+    font-weight: 300;
+    font-size: 25px;
+    padding-left: 10px;
+    color: rgb(134, 134, 134);
+ }
+ .right-side .contribute-content textarea{
+   width: 500px;
+    
+}
+
