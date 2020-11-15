@@ -131,6 +131,10 @@ a{
     padding-left: 10px;
     color: rgb(134, 134, 134);
  }
+ .right-side .contribute-content .fa-paper-plane:hover{
+    color: rgb(32, 101, 228);
+    transition: all 0.3s;
+ }
  .right-side .contribute-content textarea{
    width: 500px;
     
