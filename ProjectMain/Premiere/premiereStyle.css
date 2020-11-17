@@ -103,7 +103,8 @@ a{
     display: flex;
     flex-direction: row;
     padding-bottom: 40px;
-    font-size: 14px;
+    font-size: 12px;
+    color: rgb(87, 87, 87);
     
 }
 .information p{
@@ -121,6 +122,9 @@ a{
 .right-side .contribute-content input{
    padding: 10px;
    margin: 20px 0;
+   border: none;
+   outline: none;
+   background-color: rgba(230, 230, 230, 0.404);
 }
 .right-side .contribute-content input[type=email]{
     width: 250px;
