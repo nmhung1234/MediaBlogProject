@@ -23,6 +23,9 @@
     text-decoration: none;
     color: black;
 }
+.main-option-link:active{
+    transform: translateY(5px);
+}
 .main-option{
     display: block;
     height: 70px;
@@ -45,4 +48,51 @@
     background-image: linear-gradient(-20deg,rgba(4, 70, 190, 0.589), rgba(7, 218, 53, 0.39));
     color: white;
     font-weight: 700;
+}
+#mainweb .main-option-link .animate1{
+    opacity: 1;
+    animation:  moving1 .5s ease-out;
+    
+}
+#mainweb .main-option-link .animate2{
+    animation:  moving2 .5s ease-out;
+    
+}
+#mainweb .main-option-link .animate3{
+    opacity: 1;
+    animation:  moving1 .5s ease-out;
+    
+}
+#mainweb .main-option-link .animate4{
+    opacity: 1;
+    animation:  moving2 .5s ease-out;
+    
+}
+@keyframes moving1{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes moving2{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes hideblock{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
