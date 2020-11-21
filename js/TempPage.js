@@ -1,40 +1,86 @@
-let mainweb = document.getElementById('mainweb');
-let tbdata;
-console.dir(mainweb.children[0]);
 
-let a = mainweb.children[0].onclick = async function detail(){
-    let data = await fetch(' http://localhost:3000/Premiere');
-        let dataConvert = await data.json();
-        console.log(dataConvert);
-{
-        
-async function showpost(){
-    if(a)
-    {
-    
+
+let component = document.querySelector('.component');
+
+// let mainWeb  = document.querySelector('#mainweb');
+// let selectionid;
+// console.log(hmmmm(mainWeb,selectionid))
+
+showTemp().then(function(ss){
+    console.log(ss[0]);
+
+    component.innerHTML = "";
+    let PremiereArray = ss[0].map(function(value, index) {
+        return `<div class="component-child">
+        <a href="../ContentPage/ContentPage.html" target= "_blank" >
+            <img src="${value.img}" alt="Ảnh bài viết">
+            <p>${value.content}</p>
+        </a>
+        </div>`
+    } )
+    let renderPremiere = PremiereArray.join("");
+    component.innerHTML = renderPremiere; 
+})
+
+select.onchange = function (event) {
+    console.log(event.target.value);
+
+    if (event.target.value == 0) {
+        showTemp().then(function (ss) {
+            console.log(ss[0]);
+            component.innerHTML = "";
+
+            let PremiereToRender = ss[0].map(function (value, index) {
+                return `<div class="component-child">
+                        <a href="../ContentPage/ContentPage.html" target= "_blank" >
+                            <img src="${value.img}" alt="Ảnh bài viết">
+                            <p>${value.content}</p>
+                        </a>
+                        </div>`
+            })
+            let renderPremiere = PremiereToRender.join("");
+            component.innerHTML = renderPremiere;
+        })
     }
-    if(tbdata == "aftereffect")
-    {
-        let data = await fetch(' http://localhost:3000/PhotoShop');
-        let dataConvert = await data.json();
-        console.log(dataConvert);
-    
+
+    if (event.target.value == 1) {
+        showTemp().then(function (ss) {
+            console.log(ss[0]);
+
+            component.innerHTML = "";
+            let PremiereArray = ss[0].filter(function (value, index) {
+                return value.view == '100'
+            })
+            let PremiereToRender = PremiereArray.map(function (value, index) {
+                return `<div class="component-child">
+                        <a href="../ContentPage/ContentPage.html" target= "_blank" >
+                            <img src="${value.img}" alt="Ảnh bài viết">
+                            <p>${value.content}</p>
+                        </a>
+                        </div>`
+            })
+            let renderPremiere = PremiereToRender.join("");
+            component.innerHTML = renderPremiere;
+        })
     }
-    if(tbdata == "photoshop")
-    {
-        let data = await fetch(' http://localhost:3000/After Effect');
-        let dataConvert = await data.json();
-        console.log(dataConvert);
-    
+    if (event.target.value == 2) {
+        showTemp().then(function (ss) {
+            console.log(ss[0]);
+            component.innerHTML = "";
+            let PremiereArray = ss[0].filter(function (value, index) {
+                return value.like >= '100'
+            })
+
+            let PremiereToRender = PremiereArray.map(function (value, index) {
+                return `<div class="component-child">
+                        <a href="../ContentPage/ContentPage.html" target= "_blank" >
+                            <img src="${value.img}" alt="Ảnh bài viết">
+                            <p>${value.content}</p>
+                        </a>
+                        </div>`
+            })
+            let renderPremiere = PremiereToRender.join("");
+            component.innerHTML = renderPremiere;
+        })
     }
-    if(tbdata == "adobeillutrator")
-    {
-        let data = await fetch(' http://localhost:3000/Adobe Illutrator');
-        let dataConvert = await data.json();
-        console.log(dataConvert);
-    
-    }
-   
 }
-showpost();
-

@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 /* -------container------ */
 .all {
   background-image: linear-gradient(
@@ -19,7 +23,7 @@
   margin: 0 auto;
   /* border: 1px solid black; */
 }
-/* -------------- */
+
 
 /* --------navigation------- */
 .container .nav {
@@ -59,12 +63,43 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
 .container .component .component-child {
   /* border:  1px solid black; */
-  height: 40%;
-  width: 25%;
+  height: 30%;
+  width: 70%;
   margin: 20px;
   border-radius: 10px;
   box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.164);
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.219);
+  transition: all 0.3s ease-in;
 }
+.container .component .component-child:hover {
+  transform: translateY(-15px) scale(1.05);
+  transition: all 0.4s ease-out;
+}
+.container .component .component-child a{
+  /* border:  1px solid black; */
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  display: flex;
+}
+.container .component .component-child img{
+  /* border:  1px solid black; */
+  height: 100%;
+  width: 40%;
+  border-radius: 10px 0  0 10px;
+}
+.container .component .component-child p{
+  /* border:  1px solid black; */
+  height: 100%;
+  width: 50%;
+  line-height: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  
+}
+ 
