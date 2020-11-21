@@ -1,35 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* -------container------ */
-.all{
-    background-image: linear-gradient(40deg,rgba(85, 67, 243, 0.253) 30%, rgba(243, 11, 11, 0.342)), url('../Images/backTemp.jpg');
-    background-position-y: 80%;
+.all {
+  background-image: linear-gradient(
+      40deg,
+      rgba(85, 67, 243, 0.253) 30%,
+      rgba(243, 11, 11, 0.342)
+    ),
+    url("../Images/backTemp.jpg");
+  background-position-y: 80%;
 }
-.container{
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    /* border: 1px solid black; */
-   
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  /* border: 1px solid black; */
 }
 /* -------------- */
 
 /* --------navigation------- */
-.container .nav{
-    height: 50px;
-    /* border:  1px solid black; */
-    display: flex;
-    justify-content: flex-end;
+.container .nav {
+  height: 50px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: flex-end;
 }
-.container .select{
-    height: 30px;
-    margin: 10px 20px 0 0;
-    border: none;
-    outline: none;
-    border-radius: 5px;
+.container .select {
+  height: 30px;
+  margin: 10px 20px 0 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 .container input[type=text]{
     height: 30px;
@@ -46,22 +50,21 @@
     
 }
 
-
 /* --------component--------- */
-.container .component{
-    /* border:  1px solid black; */
-    height: 100vh;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.container .component {
+  /* border:  1px solid black; */
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.container .component .component-child{
-    /* border:  1px solid black; */
-    height: 40%;
-    width: 25%;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.164);
-    background-color: white;
+.container .component .component-child {
+  /* border:  1px solid black; */
+  height: 40%;
+  width: 25%;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.164);
+  background-color: white;
 }
