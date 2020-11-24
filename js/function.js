@@ -21,7 +21,6 @@ async function showTemp(){
 }
 
 
-
 let select = document.querySelector('.select');
 
 
@@ -40,3 +39,4 @@ let mainweb = document.getElementById("mainweb");
 // promise.then(function(ss){
 //     console.log(ss);
 // })
+

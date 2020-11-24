@@ -2,7 +2,7 @@
 
 let component = document.querySelector('.component');
 
-// let mainWeb  = document.querySelector('#mainweb');
+// let mainWeb = document.querySelector('#mainweb');
 // let selectionid;
 // console.log(hmmmm(mainWeb,selectionid))
 
