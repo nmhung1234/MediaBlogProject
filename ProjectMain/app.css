@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.header {
+    height: 120px;
+    background-image: linear-gradient(-20deg, rgba(4, 70, 190, 0.589), rgba(218, 7, 7, 0.39)), url('./4321.jpg');
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__left {
+    display: flex;
+    white-space: space;
+}
