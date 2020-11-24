@@ -15,6 +15,7 @@ a{
       rgba(243, 11, 11, 0.342)
     ),
     url("../Images/backTemp.jpg");
+    background-attachment: fixed;
   background-position-y: 80%;
 }
 .container {
