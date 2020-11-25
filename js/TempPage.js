@@ -111,6 +111,7 @@ select.onchange = function (event) {
 // ------------------------------------
 
 component.onclick = function (e) {
+  console.log(e.target.parentElement);
   localStorage.setItem(
     "idTempPage",
     JSON.stringify(e.target.parentElement.parentElement.id)
