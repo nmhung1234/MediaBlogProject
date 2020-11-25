@@ -46,7 +46,7 @@ select.onchange = function (event) {
         value,
         index
       ) {
-        return `<div class="component-child">
+        return `<div class="component-child" id = "${value.id}">
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
                             <p>${value.title}</p>
@@ -70,7 +70,7 @@ select.onchange = function (event) {
         return value.view == "100";
       });
       let PremiereToRender = PremiereArray.map(function (value, index) {
-        return `<div class="component-child">
+        return `<div class="component-child" id = "${value.id}">
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
                             <p>${value.title}</p>
@@ -93,7 +93,7 @@ select.onchange = function (event) {
       });
 
       let PremiereToRender = PremiereArray.map(function (value, index) {
-        return `<div class="component-child">
+        return `<div class="component-child" id = "${value.id}">
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
                             <p>${value.title}</p>
