@@ -19,91 +19,82 @@ console.log(idComponentConverted);
 // ----- Dashboard ------
 
 showTemp().then(function (ss) {
-  console.log(ss[idComponentConverted]);
+    console.log(ss[idComponentConverted]);
 
-  component.innerHTML = "";
-  let PremiereArray = ss[idComponentConverted].map(function (value, index) {
-    return `<div class="component-child" id = "${value.id}">
+    component.innerHTML = "";
+    let PremiereArray = ss[idComponentConverted].map(function (value, index) {
+        return `<div class="component-child" id = "${value.id}">
         <a href="../ContentPage/ContentPage.html" target= "_blank" >
             <img src="${value.img}" alt="Ảnh bài viết" >
             <p>${value.title}</p>
         </a>
         </div>`;
-  });
-  let renderPremiere = PremiereArray.join("");
-  component.innerHTML = renderPremiere;
+    });
+    let renderPremiere = PremiereArray.join("");
+    component.innerHTML = renderPremiere;
 });
 
 select.onchange = function (event) {
-  console.log(event.target.value);
+    console.log(event.target.value);
 
-  if (event.target.value == 0) {
-    showTemp().then(function (ss) {
-      console.log(ss[idComponentConverted]);
-      component.innerHTML = "";
+    if (event.target.value == 0) {
+        showTemp().then(function (ss) {
+            console.log(ss[idComponentConverted]);
+            component.innerHTML = "";
 
-      let PremiereToRender = ss[idComponentConverted].map(function (
-        value,
-        index
-      ) {
-        return `<div class="component-child">
+            let PremiereToRender = ss[idComponentConverted].map(function (value,index) {
+                return `<div class="component-child" id = "${value.id}">
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
                             <p>${value.title}</p>
                         </a>
                         </div>`;
-      });
-      let renderPremiere = PremiereToRender.join("");
-      component.innerHTML = renderPremiere;
-    });
-  }
+            });
+            let renderPremiere = PremiereToRender.join("");
+            component.innerHTML = renderPremiere;
+        });
+    }
 
-  if (event.target.value == 1) {
-    showTemp().then(function (ss) {
-      console.log(ss[idComponentConverted]);
+    if (event.target.value == 1) {
+        showTemp().then(function (ss) {
+            console.log(ss[idComponentConverted]);
 
-      component.innerHTML = "";
-      let PremiereArray = ss[idComponentConverted].filter(function (
-        value,
-        index
-      ) {
-        return value.view == "100";
-      });
-      let PremiereToRender = PremiereArray.map(function (value, index) {
-        return `<div class="component-child">
+            component.innerHTML = "";
+            let PremiereArray = ss[idComponentConverted].filter(function (value,index) {
+                return value.view == "100";
+            });
+            let PremiereToRender = PremiereArray.map(function (value, index) {
+                return `<div class="component-child" id = "${value.id}">
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
                             <p>${value.title}</p>
                         </a>
                         </div>`;
-      });
-      let renderPremiere = PremiereToRender.join("");
-      component.innerHTML = renderPremiere;
-    });
-  }
-  if (event.target.value == 2) {
-    showTemp().then(function (ss) {
-      console.log(ss[idComponentConverted]);
-      component.innerHTML = "";
-      let PremiereArray = ss[idComponentConverted].filter(function (
-        value,
-        index
-      ) {
-        return value.like >= "100";
-      });
+            });
+            let renderPremiere = PremiereToRender.join("");
+            component.innerHTML = renderPremiere;
+        });
+    }
+    if (event.target.value == 2) {
+        showTemp().then(function (ss) {
+            console.log(ss[idComponentConverted]);
+            component.innerHTML = "";
+            let PremiereArray = ss[idComponentConverted].filter(function (value,index) {
+                return value.like >= "100";
+            });
 
-      let PremiereToRender = PremiereArray.map(function (value, index) {
-        return `<div class="component-child">
+            let PremiereToRender = PremiereArray.map(function (value, index) {
+                return `<div class="component-child" id = "${value.id}">
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
                             <p>${value.title}</p>
                         </a>
                         </div>`;
-      });
-      let renderPremiere = PremiereToRender.join("");
-      component.innerHTML = renderPremiere;
-    });
-  }
+            });
+            let renderPremiere = PremiereToRender.join("");
+            component.innerHTML = renderPremiere;
+        });
+    }
 };
 
 // ---------- tempage--------
@@ -111,8 +102,8 @@ select.onchange = function (event) {
 // ------------------------------------
 
 component.onclick = function (e) {
-  localStorage.setItem(
-    "idTempPage",
-    JSON.stringify(e.target.parentElement.parentElement.id)
-  );
+    localStorage.setItem(
+        "idTempPage",
+        JSON.stringify(e.target.parentElement.parentElement.id)
+    );
 };
