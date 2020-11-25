@@ -5,38 +5,28 @@ let afterEffect = document.querySelector(".after-effect");
 let photoShop = document.querySelector(".photoshop");
 let adobeIllutrator = document.querySelector(".adobe-illutrator");
 
-// let dataConverted;
-async function showTemp() {
-  let data1 = await fetch("http://localhost:3000/Premiere");
-  let data2 = await fetch("http://localhost:3000/PhotoShop");
-  let data3 = await fetch("http://localhost:3000/AfterEffect");
-  let data4 = await fetch("http://localhost:3000/AdobeIllutrator");
-
-  let dataPremiere = await data1.json();
-  let dataPhotoShop = await data2.json();
-  let dataAfterEffect = await data3.json();
-  let dataAdobeIllutrator = await data4.json();
-
-  return [dataPremiere, dataPhotoShop, dataAfterEffect, dataAdobeIllutrator];
-}
-
-let idJson = localStorage.getItem("idDashBoard");
-let idConverted = JSON.parse(idJson);
-console.log(idConverted);
-
 let select = document.querySelector(".select");
+
+let mainweb = document.getElementById("mainweb");
 
 let component = document.querySelector(".component");
 
+let idJsonComponent = localStorage.getItem("idDashBoard");
+
+let idComponentConverted = JSON.parse(idJsonComponent);
+console.log(idComponentConverted);
+
+// ----- Dashboard ------
+
 showTemp().then(function (ss) {
-  console.log(ss[0]);
+  console.log(ss[idComponentConverted]);
 
   component.innerHTML = "";
-  let PremiereArray = ss[0].map(function (value, index) {
-    return `<div class="component-child">
+  let PremiereArray = ss[idComponentConverted].map(function (value, index) {
+    return `<div class="component-child" id = "${value.id}">
         <a href="../ContentPage/ContentPage.html" target= "_blank" >
-            <img src="${value.img}" alt="Ảnh bài viết">
-            <p id = ${value.id}>${value.content}</p>
+            <img src="${value.img}" alt="Ảnh bài viết" >
+            <p>${value.title}</p>
         </a>
         </div>`;
   });
@@ -49,14 +39,17 @@ select.onchange = function (event) {
 
   if (event.target.value == 0) {
     showTemp().then(function (ss) {
-      console.log(ss[0]);
+      console.log(ss[idComponentConverted]);
       component.innerHTML = "";
 
-      let PremiereToRender = ss[0].map(function (value, index) {
-        return `<div class="component-child">
+      let PremiereToRender = ss[idComponentConverted].map(function (
+        value,
+        index
+      ) {
+        return `<div class="component-child" id = "${value.id}">
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
-                            <p>${value.content}</p>
+                            <p>${value.title}</p>
                         </a>
                         </div>`;
       });
@@ -67,17 +60,20 @@ select.onchange = function (event) {
 
   if (event.target.value == 1) {
     showTemp().then(function (ss) {
-      console.log(ss[0]);
+      console.log(ss[idComponentConverted]);
 
       component.innerHTML = "";
-      let PremiereArray = ss[0].filter(function (value, index) {
+      let PremiereArray = ss[idComponentConverted].filter(function (
+        value,
+        index
+      ) {
         return value.view == "100";
       });
       let PremiereToRender = PremiereArray.map(function (value, index) {
-        return `<div class="component-child">
+        return `<div class="component-child" id = "${value.id}">
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
-                            <p>${value.content}</p>
+                            <p>${value.title}</p>
                         </a>
                         </div>`;
       });
@@ -87,17 +83,20 @@ select.onchange = function (event) {
   }
   if (event.target.value == 2) {
     showTemp().then(function (ss) {
-      console.log(ss[0]);
+      console.log(ss[idComponentConverted]);
       component.innerHTML = "";
-      let PremiereArray = ss[0].filter(function (value, index) {
+      let PremiereArray = ss[idComponentConverted].filter(function (
+        value,
+        index
+      ) {
         return value.like >= "100";
       });
 
       let PremiereToRender = PremiereArray.map(function (value, index) {
-        return `<div class="component-child">
+        return `<div class="component-child" id = "${value.id}">
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
-                            <p>${value.content}</p>
+                            <p>${value.title}</p>
                         </a>
                         </div>`;
       });
@@ -107,6 +106,14 @@ select.onchange = function (event) {
   }
 };
 
+// ---------- tempage--------
+
+// ------------------------------------
+
 component.onclick = function (e) {
-  localStorage.setItem("idTempPage", JSON.stringify(e.target.id));
+  console.log(e.target.parentElement);
+  localStorage.setItem(
+    "idTempPage",
+    JSON.stringify(e.target.parentElement.parentElement.id)
+  );
 };

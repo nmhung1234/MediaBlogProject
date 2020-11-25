@@ -1,6 +1,9 @@
-let mainWeb = document.getElementById("mainweb");
-console.log(mainWeb);
-mainWeb.onclick = function (e) {
-  console.log(e.target.id);
-  localStorage.setItem("idDashBoard", JSON.stringify(e.target.id));
+let mainweb = document.querySelector("#mainweb");
+
+mainweb.onclick = function (e) {
+  console.log(e.target);
+  localStorage.setItem(
+    "idDashBoard",
+    JSON.stringify(e.target.parentElement.id)
+  );
 };
