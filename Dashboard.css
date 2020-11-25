@@ -28,8 +28,9 @@
   text-decoration: none;
   color: black;
 }
-.main-option-link:active {
+.main-option:active{
   transform: translateY(5px);
+  transition: all 0.1ms !important;
 }
 .main-option {
   display: block;
@@ -42,7 +43,7 @@
   margin: 20px;
   background-color: white;
   box-shadow: 0px 0px 20px 1px rgba(99, 99, 99, 0.63);
-  transition: all 0.3s;
+  transition: all 0.8s;
 }
 .main-option:hover {
   height: 90px;
@@ -70,14 +71,7 @@
 #mainweb .main-option-link .animate2 {
   animation: moving2 0.5s ease-out;
 }
-#mainweb .main-option-link .animate3 {
-  opacity: 1;
-  animation: moving1 0.5s ease-out;
-}
-#mainweb .main-option-link .animate4 {
-  opacity: 1;
-  animation: moving2 0.5s ease-out;
-}
+
 @keyframes moving1 {
   0% {
     transform: translateX(-100px);
@@ -98,11 +92,4 @@
     opacity: 1;
   }
 }
-@keyframes hideblock {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
