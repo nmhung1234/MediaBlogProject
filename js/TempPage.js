@@ -35,7 +35,6 @@ showTemp().then(function (ss) {
 });
 
 select.onchange = function (event) {
-<<<<<<< HEAD
     console.log(event.target.value);
 
     if (event.target.value == 0) {
@@ -45,26 +44,11 @@ select.onchange = function (event) {
 
             let PremiereToRender = ss[idComponentConverted].map(function (value,index) {
                 return `<div class="component-child" id = "${value.id}">
-=======
-  console.log(event.target.value);
-
-  if (event.target.value == 0) {
-    showTemp().then(function (ss) {
-      console.log(ss[idComponentConverted]);
-      component.innerHTML = "";
-
-      let PremiereToRender = ss[idComponentConverted].map(function (
-        value,
-        index
-      ) {
-        return `<div class="component-child" id = "${value.id}">
->>>>>>> 353b568f491b8e8ef0d62920c00819e82544f043
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
                             <p>${value.title}</p>
                         </a>
                         </div>`;
-<<<<<<< HEAD
             });
             let renderPremiere = PremiereToRender.join("");
             component.innerHTML = renderPremiere;
@@ -81,33 +65,11 @@ select.onchange = function (event) {
             });
             let PremiereToRender = PremiereArray.map(function (value, index) {
                 return `<div class="component-child" id = "${value.id}">
-=======
-      });
-      let renderPremiere = PremiereToRender.join("");
-      component.innerHTML = renderPremiere;
-    });
-  }
-
-  if (event.target.value == 1) {
-    showTemp().then(function (ss) {
-      console.log(ss[idComponentConverted]);
-
-      component.innerHTML = "";
-      let PremiereArray = ss[idComponentConverted].filter(function (
-        value,
-        index
-      ) {
-        return value.view == "100";
-      });
-      let PremiereToRender = PremiereArray.map(function (value, index) {
-        return `<div class="component-child" id = "${value.id}">
->>>>>>> 353b568f491b8e8ef0d62920c00819e82544f043
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
                             <p>${value.title}</p>
                         </a>
                         </div>`;
-<<<<<<< HEAD
             });
             let renderPremiere = PremiereToRender.join("");
             component.innerHTML = renderPremiere;
@@ -123,26 +85,6 @@ select.onchange = function (event) {
 
             let PremiereToRender = PremiereArray.map(function (value, index) {
                 return `<div class="component-child" id = "${value.id}">
-=======
-      });
-      let renderPremiere = PremiereToRender.join("");
-      component.innerHTML = renderPremiere;
-    });
-  }
-  if (event.target.value == 2) {
-    showTemp().then(function (ss) {
-      console.log(ss[idComponentConverted]);
-      component.innerHTML = "";
-      let PremiereArray = ss[idComponentConverted].filter(function (
-        value,
-        index
-      ) {
-        return value.like >= "100";
-      });
-
-      let PremiereToRender = PremiereArray.map(function (value, index) {
-        return `<div class="component-child" id = "${value.id}">
->>>>>>> 353b568f491b8e8ef0d62920c00819e82544f043
                         <a href="../ContentPage/ContentPage.html" target= "_blank" >
                             <img src="${value.img}" alt="Ảnh bài viết">
                             <p>${value.title}</p>
@@ -160,16 +102,8 @@ select.onchange = function (event) {
 // ------------------------------------
 
 component.onclick = function (e) {
-<<<<<<< HEAD
     localStorage.setItem(
         "idTempPage",
         JSON.stringify(e.target.parentElement.parentElement.id)
     );
-=======
-  console.log(e.target.parentElement);
-  localStorage.setItem(
-    "idTempPage",
-    JSON.stringify(e.target.parentElement.parentElement.id)
-  );
->>>>>>> 353b568f491b8e8ef0d62920c00819e82544f043
 };
