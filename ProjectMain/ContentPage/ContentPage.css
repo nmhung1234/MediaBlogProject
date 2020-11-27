@@ -194,3 +194,66 @@ a{
 .footer .for-beautiful .tag{
     border-right: 2px solid black;
 }
+
+.comment-Container{
+    /* border:  1px solid black; */
+    width: 100%;
+    /* height: 100px; */
+    margin: 20px 0;
+
+}
+.render-comment{
+    display: flex;
+    align-items: flex-start;
+    /* flex-direction: column; */
+
+}
+.comment-Container img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    margin-top: 18px;
+
+}
+.comment-Container .send-comment input{
+    outline: none;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    width:auto;
+    border-radius: 20px;
+}
+.comment-Container .send-comment button{
+    outline: none;
+    border: none;
+    background-color: rgb(132, 221, 248);
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-left: 8px;
+}
+
+.comment-Container .name-and-comment{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    padding: 10px 5px;
+    /* align-items: flex-end; */
+}
+.comment-Container .name-and-comment .del{
+    
+    align-self: flex-end;
+    background-color: #dfe4ea;
+    border-radius: 10px;
+    padding:  5px 10px;
+    font-size: 15px;
+}
+.render-comment .p-name{
+    font-weight: 600;
+}
+.render-comment .p-comment{
+    font-size: 17px;
+}

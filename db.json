@@ -1,155 +1,162 @@
-
 {
   "Premiere": [
-       {
-         "group": "Premiere",
-         "id": 1,
-         "title": "Khóc 1 dòng sông",
-         "author": "Nguyen Hung",
-         "img": "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
-         "content": "lorem ip sum hermet dolor",
-         "view": "100",
-         "date": "12/10/2020",
-         "like": "101",
-         "dislike": "0"
-       },
-       {
-         "group": "Premiere",
-         "id": 2,
-         "author": "Dang Duc",
-         "title": "Khóc 1 dòng sông",
-         "img": "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
-         "content": "lorem ip sum hermet dolor",
-         "view": "90",
-         "date": "12/10/2020",
-         "like": "100",
-         "dislike": "0"
-       },
-       {
-         "group": "Premiere",
-         "id": 3,
-         "author": "Tran Lap",
-         "title": "Khóc 1 dòng sông",
-         "img": "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
-         "content": "lorem ip sum hermet dolor",
-         "view": "80",
-         "date": "12/10/2020",
-         "like": "0",
-         "dislike": "0"
-       }
-   ],
-   "PhotoShop": [
-       {
-         "group": "PhotoShop",
-         "id": 1,
-         "author": "Nguyen Hung",
-         "title": "Khóc 1 dòng sông",
-         "img": "#",
-         "content": "lorem ip sum hermet dolor",
-         "view": "100",
-         "date": "12/10/2020",
-         "like": "0",
-         "dislike": "0"
-       },
-       {
-         "group": "PhotoShop",
-         "id": 2,
-         "author": "Dang Duc",
-         "title": "Khóc 1 dòng sông",
-         "img": "#",
-         "content": "lorem ip sum hermet dolor",
-         "view": "100",
-         "date": "12/10/2020",
-         "like": "0",
-         "dislike": "0"
-       },
-       {
-         "group": "PhotoShop",
-         "id": 3,
-         "author": "Tran Lap",
-         "title": "Khóc 1 dòng sông",
-         "img": "#",
-         "content": "lorem ip sum hermet dolor",
-         "view": "100",
-         "date": "12/10/2020",
-         "like": "0",
-         "dislike": "0"
-       }
-   ],
-   "AfterEffect": [
-       {
-         "group": "After Effect",
-         "id": 1,
-         "author": "Nguyen Hung",
-         "title": "Khóc 1 dòng sông",
-         "img": "#",
-         "content": "lorem ip sum hermet dolor",
-         "view": "100",
-         "date": "12/10/2020",
-         "like": "0",
-         "dislike": "0"
-       },
-       {
-         "group": "After Effect",
-         "id": 2,
-         "author": "Dang Duc",
-         "title": "Khóc 1 dòng sông",
-         "img": "#",
-         "content": "lorem ip sum hermet dolor",
-         "view": "100",
-         "date": "12/10/2020",
-         "like": "0",
-         "dislike": "0"
-       },
-       {
-         "group": "After Effect",
-         "id": 3,
-         "author": "Tran Lap",
-         "title": "Khóc 1 dòng sông",
-         "img": "#",
-         "content": "lorem ip sum hermet dolor",
-         "view": "100",
-         "date": "12/10/2020",
-         "like": "0",
-         "dislike": "0"
-       }
-   ],
-   "AdobeIllutrator": [
-       {
-         "group": "Adobe Illutrator",
-         "id": 1,
-         "author": "Nguyen Hung",
-         "title": "Khóc 1 dòng sông",
-         "img": "#",
-         "content": "lorem ip sum hermet dolor",
-         "view": "100",
-         "date": "12/10/2020",
-         "like": "0",
-         "dislike": "0"
-       },
-       {
-         "group": "Adobe Illutrator",
-         "id": 2,
-         "author": "Dang Duc",
-         "title": "Khóc 1 dòng sông",
-         "img": "#",
-         "content": "lorem ip sum hermet dolor",
-         "view": "100",
-         "date": "12/10/2020",
-         "like": "0",
-         "dislike": "0"
-       },
-       {
-         "group": "Adobe Illutrator",
-         "id": 3,
-         "author": "Tran Lap",
-         "title": "Khóc 1 dòng sông",
-         "img": "#",
-         "content": "lorem ip sum hermet dolor",
-         "view": "100",
-         "date": "12/10/2020",
-         "like": "0",
-         "dislike": "0"
-       }
-   ]
+    {
+      "group": "Premiere",
+      "id": 1,
+      "title": "Khóc 1 dòng sông",
+      "author": "Nguyen Hung",
+      "img": "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
+      "content": "lorem ip sum hermet dolor",
+      "view": "100",
+      "date": "12/10/2020",
+      "like": "101",
+      "dislike": "0"
+    },
+    {
+      "group": "Premiere",
+      "id": 2,
+      "author": "Dang Duc",
+      "title": "Khóc 1 dòng sông",
+      "img": "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
+      "content": "lorem ip sum hermet dolor",
+      "view": "90",
+      "date": "12/10/2020",
+      "like": "100",
+      "dislike": "0"
+    },
+    {
+      "group": "Premiere",
+      "id": 3,
+      "author": "Tran Lap",
+      "title": "Khóc 1 dòng sông",
+      "img": "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
+      "content": "lorem ip sum hermet dolor",
+      "view": "80",
+      "date": "12/10/2020",
+      "like": "0",
+      "dislike": "0"
+    }
+  ],
+  "PhotoShop": [
+    {
+      "group": "PhotoShop",
+      "id": 1,
+      "author": "Nguyen Hung",
+      "title": "Khóc 1 dòng sông",
+      "img": "#",
+      "content": "lorem ip sum hermet dolor",
+      "view": "100",
+      "date": "12/10/2020",
+      "like": "0",
+      "dislike": "0"
+    },
+    {
+      "group": "PhotoShop",
+      "id": 2,
+      "author": "Dang Duc",
+      "title": "Khóc 1 dòng sông",
+      "img": "#",
+      "content": "lorem ip sum hermet dolor",
+      "view": "100",
+      "date": "12/10/2020",
+      "like": "0",
+      "dislike": "0"
+    },
+    {
+      "group": "PhotoShop",
+      "id": 3,
+      "author": "Tran Lap",
+      "title": "Khóc 1 dòng sông",
+      "img": "#",
+      "content": "lorem ip sum hermet dolor",
+      "view": "100",
+      "date": "12/10/2020",
+      "like": "0",
+      "dislike": "0"
+    }
+  ],
+  "AfterEffect": [
+    {
+      "group": "After Effect",
+      "id": 1,
+      "author": "Nguyen Hung",
+      "title": "Khóc 1 dòng sông",
+      "img": "#",
+      "content": "lorem ip sum hermet dolor",
+      "view": "100",
+      "date": "12/10/2020",
+      "like": "0",
+      "dislike": "0"
+    },
+    {
+      "group": "After Effect",
+      "id": 2,
+      "author": "Dang Duc",
+      "title": "Khóc 1 dòng sông",
+      "img": "#",
+      "content": "lorem ip sum hermet dolor",
+      "view": "100",
+      "date": "12/10/2020",
+      "like": "0",
+      "dislike": "0"
+    },
+    {
+      "group": "After Effect",
+      "id": 3,
+      "author": "Tran Lap",
+      "title": "Khóc 1 dòng sông",
+      "img": "#",
+      "content": "lorem ip sum hermet dolor",
+      "view": "100",
+      "date": "12/10/2020",
+      "like": "0",
+      "dislike": "0"
+    }
+  ],
+  "AdobeIllutrator": [
+    {
+      "group": "Adobe Illutrator",
+      "id": 1,
+      "author": "Nguyen Hung",
+      "title": "Khóc 1 dòng sông",
+      "img": "#",
+      "content": "lorem ip sum hermet dolor",
+      "view": "100",
+      "date": "12/10/2020",
+      "like": "0",
+      "dislike": "0"
+    },
+    {
+      "group": "Adobe Illutrator",
+      "id": 2,
+      "author": "Dang Duc",
+      "title": "Khóc 1 dòng sông",
+      "img": "#",
+      "content": "lorem ip sum hermet dolor",
+      "view": "100",
+      "date": "12/10/2020",
+      "like": "0",
+      "dislike": "0"
+    },
+    {
+      "group": "Adobe Illutrator",
+      "id": 3,
+      "author": "Tran Lap",
+      "title": "Khóc 1 dòng sông",
+      "img": "#",
+      "content": "lorem ip sum hermet dolor",
+      "view": "100",
+      "date": "12/10/2020",
+      "like": "0",
+      "dislike": "0"
+    }
+  ],
+  "commentUser": [
+    {
+      "name": "Nguyễn Mạnh Hùng",
+      "avatar": "https://miro.medium.com/max/3840/1*oxzfllcH_OqAppRptmWa8A.jpeg",
+      "comment": "abc",
+      "id": 3
+    }
+  ]
 }
