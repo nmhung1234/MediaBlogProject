@@ -97,10 +97,12 @@ a{
 .container .component .component-child p{
   /* border:  1px solid black; */
   height: 100%;
-  width: 50%;
+  width: 100%;
   line-height: 100%;
-  margin: 0 auto;
-  padding-top: 20px;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  text-align: justify;
+  padding: 20px 0 0 20px;
   
 }
  
