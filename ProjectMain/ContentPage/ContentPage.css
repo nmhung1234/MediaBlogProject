@@ -228,7 +228,7 @@ a{
 .comment-Container .send-comment button{
     outline: none;
     border: none;
-    background-color: rgb(132, 221, 248);
+    background-color:#1e90ff;
     padding: 10px 20px;
     border-radius: 6px;
     margin-left: 8px;
@@ -238,7 +238,7 @@ a{
     display: flex;
     flex-direction: column;
     margin: 10px;
-    background-color: blanchedalmond;
+    background-color: #f1f2f6;
     border-radius: 20px;
     padding: 10px 5px;
     /* align-items: flex-end; */
