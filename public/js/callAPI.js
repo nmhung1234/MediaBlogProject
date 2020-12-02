@@ -1,9 +1,9 @@
 async function showTemp() {
-    let data1 = await fetch('https://blog-hung-duc.herokuapp.com//Premiere');
-    let data2 = await fetch('https://blog-hung-duc.herokuapp.com//PhotoShop');
-    let data3 = await fetch('https://blog-hung-duc.herokuapp.com//AfterEffect');
-    let data4 = await fetch('https://blog-hung-duc.herokuapp.com//AdobeIllutrator');
-    let data5 = await fetch('https://blog-hung-duc.herokuapp.com//commentUser');
+    let data1 = await fetch('https://blog-hung-duc.herokuapp.com/Premiere');
+    let data2 = await fetch('https://blog-hung-duc.herokuapp.com/PhotoShop');
+    let data3 = await fetch('https://blog-hung-duc.herokuapp.com/AfterEffect');
+    let data4 = await fetch('https://blog-hung-duc.herokuapp.com/AdobeIllutrator');
+    let data5 = await fetch('https://blog-hung-duc.herokuapp.com/commentUser');
 
     let dataPremiere = await data1.json();
     let dataPhotoShop = await data2.json();
